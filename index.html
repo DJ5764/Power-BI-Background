@@ -2,88 +2,77 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Power BI Premium Layout</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power BI Layout</title>
+
 <style>
 body {
     margin: 0;
+    width: 1280px;
+    height: 720px;
+    background: #f4f6fb;
+    overflow: hidden;
     font-family: Segoe UI, sans-serif;
-    background: #eef2ff;
 }
 
 /* Main container */
 .wrapper {
-    width: 1200px;
-    margin: 30px auto;
-    padding: 20px;
+    width: 1280px;
+    height: 720px;
+    padding: 40px;
+    box-sizing: border-box;
 }
 
-/* Header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 15px;
-}
-
-.title {
-    font-size: 24px;
-    font-weight: 600;
-    color: #374151;
-}
-
-.tab {
-    padding: 8px 15px;
-    background: #e5e7eb;
-    border-radius: 8px;
-    margin-right: 8px;
-}
-
-/* KPI cards */
+/* KPI row */
 .kpi-row {
     display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
+    gap: 20px;
+    margin-bottom: 25px;
 }
 
-.card {
+.kpi-card {
     flex: 1;
     height: 90px;
     background: white;
-    border-radius: 10px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
 }
 
 /* Middle row */
 .middle-row {
     display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
+    gap: 25px;
+    margin-bottom: 25px;
 }
 
-.big-box {
-    flex: 1.3;
-    height: 240px;
+.large-box {
+    flex: 2;
+    height: 260px;
     background: white;
-    border-radius: 10px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
 }
 
-.small-box {
-    flex: 0.7;
-    height: 240px;
+.side-box {
+    flex: 1;
+    height: 260px;
     background: white;
-    border-radius: 10px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
 }
 
 /* Bottom row */
 .bottom-row {
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .bottom-box {
     flex: 1;
-    height: 220px;
+    height: 180px;
     background: white;
-    border-radius: 10px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
 }
 </style>
 </head>
@@ -92,28 +81,21 @@ body {
 
 <div class="wrapper">
 
-    <div class="header">
-        <div class="title">Dashboard Layout</div>
-        <div>
-            <span class="tab">Overview</span>
-            <span class="tab">Market</span>
-            <span class="tab">Segment & Categories</span>
-        </div>
-    </div>
-
+    <!-- KPI Row -->
     <div class="kpi-row">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <div class="kpi-card"></div>
+        <div class="kpi-card"></div>
+        <div class="kpi-card"></div>
+        <div class="kpi-card"></div>
     </div>
 
+    <!-- Middle Row -->
     <div class="middle-row">
-        <div class="big-box"></div>
-        <div class="small-box"></div>
+        <div class="large-box"></div>
+        <div class="side-box"></div>
     </div>
 
+    <!-- Bottom Row -->
     <div class="bottom-row">
         <div class="bottom-box"></div>
         <div class="bottom-box"></div>
